@@ -18,11 +18,14 @@ and downloading the datasets are linking them to the respective `./data` reposit
 each dataset is necessary.
 
 ### Running Code
+Models are implemented using [tensorflow](https://github.com/tensorflow/tensorflow).
 Replication of results can be acheived by running the following docker 
 [script](run_docker.sh). This script will build a docker container containing project 
-dependencies if not already built locally. It will then launch a Jupyter Notebook in 
-the container which contains replicable project code and results for each dataset in 
-respective `.ipynb` notebook files.
+dependencies if not already built locally. The docker container follows the nightly 
+release of tensorflow with GPU and jupyter notebook support. If running on a machine 
+with correct NVIDIA drivers, models will be trained with GPU acceleration.
+The script will launch a Jupyter Notebook in the container which contains replicable 
+project code and results for each dataset in respective `.ipynb` notebook files.
 
 ### Current Status
 The [SEED-IV](./SEED_IV) dataset is the dataset being primarily studied. Previous, 
@@ -33,7 +36,8 @@ contained. Further datasets may be added.
 
 ### Authors
 This project is the work of [Atneya Nair](https://github.com/atneya) 
-and [Akum Kang](https://github.com/kangakum36).
+and [Akum Kang](https://github.com/kangakum36). Unless otherwise noted,
+contributions to this repository represent their equal work.
 
 ### Institution 
 This repository is a subproject of the 
