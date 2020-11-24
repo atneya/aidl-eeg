@@ -1,0 +1,12 @@
+#PBS -N tensorflow_test
+#PBS -l nodes=1:ppn=4:gpus=1:exclusive_process
+#PBS -l walltime=20:00
+#PBS -q ece-gpu
+#PBS -j oe
+#PBS -o tf_imdb_results.out
+
+echo "Started on `/bin/hostname`"
+cd ~/aidl-eeg/SEED_IV
+module purge
+module load tensorflow-gpu/2.0.0
+python eeg-seed_iv.py -m LSTM
