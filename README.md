@@ -4,6 +4,14 @@
 This project seeks to apply deep learning techniques to electroencephalography 
 (EEG) data collected in the context of subject emotion recognition. 
 
+On the SEED-IV database, we utilized a variety of modern deep learning approaches including
+high-dimensional convolutional networks as well as hybrid convolutional and recurrent models.
+Utilizing this convolutional approach on preprocessed data achieved state of the art results 
+at 73% accuracy utilizing the LOSO (leave one subject out) experimental format.
+
+We conclude that models which adequately encompass the concept of locality across 
+multiple spatial, temporal, and frequency domains have the best performance characteristics.
+
 ## Instructions
 
 ### Requirements
